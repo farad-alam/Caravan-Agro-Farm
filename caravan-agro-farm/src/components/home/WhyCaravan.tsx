@@ -56,9 +56,9 @@ export default function WhyCaravan() {
               className="bg-white p-6 rounded-3xl shadow-xl flex flex-col items-center text-center transform hover:-translate-y-2 transition-transform duration-300"
             >
               {/* Circular Icon Container (Mimicking the image circles) */}
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border border-gray-200 p-2 mb-6 group">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-full border border-gray-200 p-1.5 mb-6 group">
                 <div className="w-full h-full bg-[#f4efdd] rounded-full flex items-center justify-center group-hover:bg-[#a0c95a] transition-colors duration-500">
-                  <reason.icon size={48} className="text-[#234524] group-hover:text-white transition-colors duration-500" strokeWidth={1.5} />
+                  <reason.icon size={28} className="text-[#234524] group-hover:text-white transition-colors duration-500" strokeWidth={1.5} />
                 </div>
               </div>
               
