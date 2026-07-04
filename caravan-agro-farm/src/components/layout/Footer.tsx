@@ -1,69 +1,86 @@
 import Link from "next/link";
-import { Leaf } from "lucide-react";
+import Image from "next/image";
+import { Facebook, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#1b3b27] text-[#f4efdd] pt-32 relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <footer className="bg-[#f9f6ef] p-4 md:p-6 lg:p-8">
+      <div className="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-4 md:gap-6">
         
-        {/* Top Huge Text */}
-        <div className="text-center mb-32">
-          <h2 className="text-5xl md:text-7xl font-serif text-[#f4efdd] mb-8 drop-shadow-sm tracking-wide">
-            Caravan Agro Farm
-          </h2>
-          <p className="text-[#f4efdd]/80 font-bangla text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-            Caravan Agro Farm একটি আধুনিক প্রযুক্তি নির্ভর সমন্বিত কৃষি উদ্যোগ। এখানে উদ্ভাবন, অগ্রগতি ও আধ্যাত্মিকতার সমন্বয়ে নিরাপদ খাদ্য উৎপাদন নিশ্চিত করা হয়।
-          </p>
+        {/* Left Dark Box */}
+        <div className="w-full lg:w-[70%] bg-[#344C35] rounded-[32px] p-8 md:p-12 lg:p-16 flex flex-col justify-between relative overflow-hidden">
+          
+          <div className="flex flex-col md:flex-row justify-between gap-12 z-10">
+            
+            {/* Left Column (Desc & Contact) */}
+            <div className="flex-1 md:max-w-md space-y-12">
+              <div>
+                <h3 className="font-bangla font-semibold text-[#CDE1A5] mb-4 uppercase tracking-wider text-sm">আমাদের সম্পর্কে</h3>
+                <p className="font-bangla text-[#F9F5EC] text-[17px] leading-relaxed">
+                  Caravan Agro Farm একটি আধুনিক প্রযুক্তি নির্ভর সমন্বিত কৃষি উদ্যোগ। এখানে উদ্ভাবন, অগ্রগতি ও আধ্যাত্মিকতার সমন্বয়ে নিরাপদ খাদ্য উৎপাদন নিশ্চিত করা হয়।
+                </p>
+              </div>
+
+              <div>
+                <h3 className="font-bangla font-semibold text-[#CDE1A5] mb-4 uppercase tracking-wider text-sm">যোগাযোগ</h3>
+                <div className="font-bangla text-[#F9F5EC] space-y-2 text-[17px]">
+                  <p>আমাদের খামার ঠিকানা এখানে হবে (Place holder)</p>
+                  <p className="pt-2">
+                    <a href="tel:01744715206" className="underline underline-offset-4 decoration-[#F9F5EC]/30 hover:text-[#CDE1A5] transition-colors">01744-715206</a>
+                    <span className="mx-3">|</span>
+                    <a href="tel:01788210335" className="underline underline-offset-4 decoration-[#F9F5EC]/30 hover:text-[#CDE1A5] transition-colors">01788-210335</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column (Links & Socials) */}
+            <div className="flex gap-8 md:gap-16">
+              <div className="flex flex-col gap-5 font-bangla text-[#F9F5EC] text-[17px]">
+                <Link href="/about" className="hover:text-[#CDE1A5] transition-colors">আমাদের সম্পর্কে</Link>
+                <Link href="/products" className="hover:text-[#CDE1A5] transition-colors">প্রোডাক্টস</Link>
+                <Link href="/products/vermicompost" className="hover:text-[#CDE1A5] transition-colors">ক্যারাভেন ভার্মিকম্পোস্ট</Link>
+                <Link href="/gallery" className="hover:text-[#CDE1A5] transition-colors">গ্যালারি</Link>
+                <Link href="/blog" className="hover:text-[#CDE1A5] transition-colors">ব্লগ</Link>
+                <Link href="/faq" className="hover:text-[#CDE1A5] transition-colors">সাধারণ জিজ্ঞাসা</Link>
+              </div>
+              
+              <div className="flex flex-col gap-4">
+                <a href="#" className="w-10 h-10 bg-[#CDE1A5] rounded-full flex items-center justify-center text-[#344C35] hover:bg-white transition-colors" aria-label="Facebook">
+                  <Facebook size={20} className="fill-current" />
+                </a>
+                <a href="#" className="w-10 h-10 bg-[#CDE1A5] rounded-full flex items-center justify-center text-[#344C35] hover:bg-white transition-colors" aria-label="YouTube">
+                  <Youtube size={20} className="fill-current" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Huge Logo Text at bottom */}
+          <div className="mt-20 z-10 w-full overflow-hidden flex flex-col">
+            <h1 className="text-[15vw] lg:text-[9rem] xl:text-[10rem] font-serif font-bold text-[#405941] leading-none tracking-tight select-none">
+              CARAVAN
+            </h1>
+            
+            {/* Copyright Row */}
+            <div className="mt-6 flex flex-col sm:flex-row justify-between items-start sm:items-center font-bangla text-[#F9F5EC]/60 text-sm border-t border-[#405941] pt-6">
+              <p>&copy; {new Date().getFullYear()} Caravan Agro Farm. সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
+          </div>
         </div>
 
-        {/* Links Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-y-12 gap-x-4 text-center font-bangla text-lg md:text-xl text-[#f4efdd]/90 mb-32">
-          <Link href="/about" className="hover:text-white hover:scale-105 transition-all duration-300">আমাদের সম্পর্কে</Link>
-          <Link href="/products" className="hover:text-white hover:scale-105 transition-all duration-300">প্রোডাক্টস</Link>
-          <Link href="/gallery" className="hover:text-white hover:scale-105 transition-all duration-300">গ্যালারি</Link>
-          <Link href="/blog" className="hover:text-white hover:scale-105 transition-all duration-300">ব্লগ</Link>
-          <Link href="/faq" className="hover:text-white hover:scale-105 transition-all duration-300">সাধারণ জিজ্ঞাসা</Link>
-          <Link href="/products/vermicompost" className="hover:text-white hover:scale-105 transition-all duration-300">ভার্মিকম্পোস্ট</Link>
-          
-          <a href="#" className="hover:text-white hover:scale-105 transition-all duration-300">Facebook</a>
-          <a href="#" className="hover:text-white hover:scale-105 transition-all duration-300">YouTube</a>
-          <a href="tel:01744715206" className="hover:text-white hover:scale-105 transition-all duration-300">01744-715206</a>
-          <a href="tel:01788210335" className="hover:text-white hover:scale-105 transition-all duration-300">01788-210335</a>
-          <span className="col-span-2 lg:col-span-2 px-4 hover:text-white transition-all duration-300 text-sm md:text-lg flex items-center justify-center">
-            আমাদের খামার ঠিকানা এখানে হবে (Place holder)
-          </span>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="flex flex-col lg:flex-row justify-between items-center text-[#f4efdd]/60 font-bangla text-sm">
-          <div className="flex items-center gap-2 mb-8 lg:mb-0">
-            <span>Caravan Agro Farm</span>
-            <span className="border border-[#f4efdd]/30 px-1.5 py-0.5 rounded text-[10px] font-sans">C</span>
-          </div>
-          
-          <div className="flex items-center gap-4 italic font-serif text-xl md:text-2xl text-[#f4efdd]/90 mb-8 lg:mb-0">
-            <Leaf size={16} className="opacity-60" />
-            <span className="tracking-wide">প্রকৃতির আশীর্বাদ, আপনার ফসলের জন্য সেরা উপহার</span>
-            <Leaf size={16} className="opacity-60" />
-          </div>
-          
-          <div className="flex items-center gap-2">
-            <span>&copy; {new Date().getFullYear()} সর্বস্বত্ব সংরক্ষিত</span>
-            <span className="border border-[#f4efdd]/30 px-1.5 py-0.5 rounded text-[10px] font-sans">R</span>
-          </div>
+        {/* Right Image Box */}
+        <div className="w-full lg:w-[30%] min-h-[400px] lg:min-h-auto rounded-[32px] overflow-hidden relative">
+          <Image 
+            src="https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?q=80&w=800&auto=format&fit=crop"
+            alt="Caravan Agro Farm Background"
+            fill
+            className="object-cover"
+            sizes="(max-width: 1024px) 100vw, 33vw"
+          />
         </div>
 
       </div>
-
-      {/* Decorative Bottom Pattern (Checkerboard style) */}
-      <div 
-        className="h-4 w-full opacity-10" 
-        style={{ 
-          backgroundImage: `linear-gradient(45deg, #f4efdd 25%, transparent 25%, transparent 75%, #f4efdd 75%, #f4efdd), linear-gradient(45deg, #f4efdd 25%, transparent 25%, transparent 75%, #f4efdd 75%, #f4efdd)`, 
-          backgroundSize: '16px 16px', 
-          backgroundPosition: '0 0, 8px 8px' 
-        }}
-      ></div>
     </footer>
   );
 }
