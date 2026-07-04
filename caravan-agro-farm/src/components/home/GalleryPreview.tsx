@@ -7,6 +7,9 @@ export default function GalleryPreview() {
     { src: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop", alt: "Farm view 1" },
     { src: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?q=80&w=800&auto=format&fit=crop", alt: "Farm view 2" },
     { src: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=800&auto=format&fit=crop", alt: "Farm view 3" },
+    { src: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop", alt: "Farm view 4" },
+    { src: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=800&auto=format&fit=crop", alt: "Farm view 5" },
+    { src: "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?q=80&w=800&auto=format&fit=crop", alt: "Farm view 6" },
   ];
 
   return (
