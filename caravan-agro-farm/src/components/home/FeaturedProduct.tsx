@@ -20,7 +20,7 @@ export default function FeaturedProduct() {
             <div className="absolute inset-0 bg-[var(--color-brand-green)] rounded-3xl transform -rotate-3 scale-105 opacity-10"></div>
             <div className="relative aspect-square md:aspect-[4/3] lg:aspect-square w-full max-w-lg mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
               <Image 
-                src="https://images.unsplash.com/photo-1592982537447-6f296d05f32b?q=80&w=2070&auto=format&fit=crop" 
+                src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070&auto=format&fit=crop" 
                 alt="Caravan Vermicompost"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700"

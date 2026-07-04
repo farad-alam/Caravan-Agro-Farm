@@ -13,7 +13,7 @@ export default function ProductsPage() {
       id: "vermicompost",
       name: "ক্যারাভেন ভার্মিকম্পোস্ট",
       shortDesc: "আপনার ফসলের জন্য ১০০% প্রাকৃতিক এবং নিরাপদ সার। এটি মাটির উর্বরতা বৃদ্ধি করে ও পানির ধারণক্ষমতা বাড়ায়।",
-      image: "https://images.unsplash.com/photo-1592982537447-6f296d05f32b?q=80&w=800&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=800&auto=format&fit=crop",
       badge: "Best Seller",
     },
     // Add more products here later

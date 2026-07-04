@@ -13,7 +13,7 @@ export default function VermicompostPage() {
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "Caravan Vermicompost",
-    "image": "https://images.unsplash.com/photo-1592982537447-6f296d05f32b?q=80&w=2070&auto=format&fit=crop",
+    "image": "https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070&auto=format&fit=crop",
     "description": "১০০% প্রাকৃতিক এবং নিরাপদ ভার্মিকম্পোস্ট সার। মাটির উর্বরতা বৃদ্ধি করে এবং ফলন বাড়ায়।",
     "brand": {
       "@type": "Brand",
@@ -77,7 +77,7 @@ export default function VermicompostPage() {
             <div className="w-full lg:w-1/2">
               <div className="aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden relative border border-gray-100 shadow-sm">
                 <Image
-                  src="https://images.unsplash.com/photo-1592982537447-6f296d05f32b?q=80&w=2070&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=2070&auto=format&fit=crop"
                   alt="Caravan Vermicompost"
                   fill
                   className="object-cover"
