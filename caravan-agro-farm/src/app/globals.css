@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: hsl(138, 52%, 30%);
+  --color-brand-green-accent: hsl(138, 45%, 45%);
+  --color-brand-brown: hsl(30, 40%, 35%);
+  --color-brand-beige: hsl(40, 35%, 94%);
+  --color-brand-offwhite: hsl(0, 0%, 98%);
+  --color-brand-dark: hsl(210, 15%, 12%);
+  --color-brand-muted: hsl(210, 8%, 45%);
+  --color-brand-gold: hsl(45, 80%, 52%);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-bangla: var(--font-hind-siliguri), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: var(--color-brand-offwhite);
+  --foreground: var(--color-brand-dark);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6, .font-bangla {
+  font-family: var(--font-bangla);
+}
+
+/* Custom Scrollbar for a premium feel */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-brand-offwhite);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-brand-green-accent);
+  border-radius: 10px;
+  border: 2px solid var(--color-brand-offwhite);
+}
+
+/* Animations */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 rgba(63, 163, 94, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(63, 163, 94, 0);
+  }
+  100% {
+    transform: scale(0.8);
+    box-shadow: 0 0 0 0 rgba(63, 163, 94, 0);
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2s infinite;
+}
