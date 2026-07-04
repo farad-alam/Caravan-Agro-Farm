@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Facebook, Youtube } from "lucide-react";
+import { Globe, Video } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -47,10 +47,10 @@ export default function Footer() {
               
               <div className="flex flex-col gap-4">
                 <a href="#" className="w-10 h-10 bg-[#CDE1A5] rounded-full flex items-center justify-center text-[#344C35] hover:bg-white transition-colors" aria-label="Facebook">
-                  <Facebook size={20} className="fill-current" />
+                  <Globe size={20} className="fill-current" />
                 </a>
                 <a href="#" className="w-10 h-10 bg-[#CDE1A5] rounded-full flex items-center justify-center text-[#344C35] hover:bg-white transition-colors" aria-label="YouTube">
-                  <Youtube size={20} className="fill-current" />
+                  <Video size={20} className="fill-current" />
                 </a>
               </div>
             </div>
